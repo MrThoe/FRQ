@@ -21,5 +21,10 @@ public class MusicDownloads
       */
       public DownloadInfo getDownloadInfo(String title)
       {  /** to be implemented in part(a) */ }
+    
+    public void updateDownloads(List<String> titles)
+    { /* to be implemented in part(b) */ }
+    
+    //There may be instance variables, constructors, and methods that are not shown
 }
       
