@@ -14,10 +14,10 @@ public class HiddenWord{
       String output = "";
       for(int i = 0; i < secretWord.length; i++)
       {
-          if(secretWord.charAt(i) == guess.charAt(i))
+          if(secretWord.subString(i,i+1).equals(guess.subString(i,i+1)))
           {
-            output += secretWord.charAt(i);  
-          } else if (secretWord.indexOf(guess.charAt(i))){
+            output += secretWord.subString(i, i+1);  
+          } else if (secretWord.indexOf(guess.subString(i,i+1))){
             output += "+";
           } else {
             output += "*";
