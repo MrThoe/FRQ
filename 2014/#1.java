@@ -20,7 +20,7 @@ public class WordScrambler
     return output;
   }
   
-  private String[] mixedWord(String[] words)
+  private String[] mixedWords(String[] words)
   {
     String[] output = new String[words.length];
     for(int i = 0; i < words.length-1; i++){
