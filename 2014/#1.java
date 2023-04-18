@@ -20,10 +20,11 @@ public class WordScrambler
     return output;
   }
   
+  /** Precondition:  words.length is EVEN */
   private String[] mixedWords(String[] words)
   {
     String[] output = new String[words.length];
-    for(int i = 0; i < words.length-1; i++){
+    for(int i = 0; i < words.length; i++){
       if(i%2==0){
         output[i] = recombine(words[i], words[i+1]);
       } else {
